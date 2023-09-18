@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intern2grow/authentication/presentation/widgets/appbar.dart';
 import 'package:intern2grow/authentication/presentation/widgets/intern_logo_widget.dart';
+import 'package:intern2grow/config/theme/text_style.dart';
+import 'package:intern2grow/core/utils/app_strings.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -25,6 +27,10 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: 25.h,
             ),
+            const Text(
+              AppStrings.loginInYourAccount,
+              style: TextStyles.textStyle20,
+            )
           ],
         ),
       ),

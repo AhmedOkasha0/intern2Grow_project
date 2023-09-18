@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intern2grow/core/utils/app_colors.dart';
 import 'package:intern2grow/core/utils/app_constatns.dart';
 
 class InternContanier extends StatelessWidget {
@@ -11,7 +12,7 @@ class InternContanier extends StatelessWidget {
         BoxShadow(
           blurRadius: 3,
           spreadRadius: 3,
-          color: Color.fromRGBO(0, 0, 0, 0.15),
+          color: AppColors.interContenierShadow,
           offset: Offset(0, 4),
         )
       ]),
