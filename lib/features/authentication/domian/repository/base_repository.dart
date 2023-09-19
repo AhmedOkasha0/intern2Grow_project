@@ -4,4 +4,6 @@ import 'package:intern2grow/core/faliuer/faliuer.dart';
 
 abstract class BaseQouteRepository {
   Future<Either<Failuer, User>> login(parameter);
+    Future<Either<Failuer, User>> register(parameter);
+
 }
