@@ -119,7 +119,11 @@ class LoginScreen extends StatelessWidget {
                       height: 44.h,
                       width: 345.w,
                       child: CustomElevatedButton(
-                          ontab: () {}, text: AppStrings.login),
+                          ontab: () {
+                            Navigator.pushNamed(
+                                context, AppStrings.registerRoute);
+                          },
+                          text: AppStrings.login),
                     ),
                   ],
                 ),

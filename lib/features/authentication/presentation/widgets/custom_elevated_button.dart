@@ -15,7 +15,7 @@ class CustomElevatedButton extends StatelessWidget {
       onPressed: () => ontab,
       style: ElevatedButton.styleFrom(
           shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.w)),
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.w)),
           backgroundColor: AppColors.buttonBlu),
       child: Text(
         text,
