@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intern2grow/feautures/authentication/presentation/screens/login_screen.dart';
+import 'package:intern2grow/features/authentication/presentation/screens/login_screen.dart';
 
 class AppRouter {
   static Route? onGenerateRoute(RouteSettings settings) {

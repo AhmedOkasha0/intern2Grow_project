@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:intern2grow/feautures/authentication/presentation/widgets/appbar.dart';
-import 'package:intern2grow/feautures/authentication/presentation/widgets/custom_elevated_button.dart';
-import 'package:intern2grow/feautures/authentication/presentation/widgets/custom_textformfield.dart';
-import 'package:intern2grow/feautures/authentication/presentation/widgets/intern_logo_widget.dart';
+import 'package:intern2grow/features/authentication/presentation/widgets/appbar.dart';
+import 'package:intern2grow/features/authentication/presentation/widgets/custom_elevated_button.dart';
+import 'package:intern2grow/features/authentication/presentation/widgets/custom_textformfield.dart';
+import 'package:intern2grow/features/authentication/presentation/widgets/intern_logo_widget.dart';
 import 'package:intern2grow/config/theme/text_style.dart';
 import 'package:intern2grow/core/utils/app_colors.dart';
 import 'package:intern2grow/core/utils/app_constatns.dart';

@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:intern2grow/feautures/authentication/domian/entities/user.dart';
-import 'package:intern2grow/feautures/authentication/domian/repository/base_repository.dart';
+import 'package:intern2grow/features/authentication/domian/entities/user.dart';
+import 'package:intern2grow/features/authentication/domian/repository/base_repository.dart';
 import 'package:intern2grow/core/faliuer/faliuer.dart';
 
 class LoginUsecase {
