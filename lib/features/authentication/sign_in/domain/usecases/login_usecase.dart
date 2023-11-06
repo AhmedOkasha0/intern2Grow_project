@@ -1,17 +1,18 @@
 import 'package:dartz/dartz.dart';
 import 'package:intern2grow/core/base_usecase/base_usecase.dart';
+import 'package:intern2grow/features/authentication/sign_in/domain/repository/base_login_repo.dart';
+import 'package:intern2grow/features/authentication/sign_up/data/models/user_models.dart';
 import 'package:intern2grow/features/authentication/sign_up/domian/entities/user.dart';
-import 'package:intern2grow/features/authentication/sign_up/domian/repository/base_repository.dart';
 import 'package:intern2grow/core/faliuer/faliuer.dart';
 
-class LoginUsecase extends BaseUseCase<User, User> {
-  BaseQouteRepository baseQouteRepository;
+class LoginUsecase extends BaseUseCase<UserModel, User> {
+  BaseSignInRepo signInRepo;
   LoginUsecase({
-    required this.baseQouteRepository,
+    required this.signInRepo,
   });
   @override
-  Future<Either<Failuer, User>> call(User parameter) async {
-    return await baseQouteRepository.login(
+  Future<Either<Failuer, UserModel>> call(User parameter) async {
+    return await signInRepo.logIn(
       password: parameter.passwprd,
       userName: parameter.userName,
       emailAdress: parameter.emailAdress,
