@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intern2grow/core/utils/app_strings.dart';
-import 'package:intern2grow/features/authentication/presentation/screens/login_screen.dart';
-import 'package:intern2grow/features/authentication/presentation/screens/register_screen.dart';
+import 'package:intern2grow/features/authentication/sign_up/presentation/screens/login_screen.dart';
+import 'package:intern2grow/features/authentication/sign_up/presentation/screens/register_screen.dart';
 
 class AppRouter {
   static Route? onGenerateRoute(RouteSettings settings) {

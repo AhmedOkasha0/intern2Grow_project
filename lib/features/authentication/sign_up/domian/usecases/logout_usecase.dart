@@ -3,8 +3,8 @@ import 'package:equatable/equatable.dart';
 
 import 'package:intern2grow/core/base_usecase/base_usecase.dart';
 import 'package:intern2grow/core/faliuer/faliuer.dart';
-import 'package:intern2grow/features/authentication/domian/entities/user.dart';
-import 'package:intern2grow/features/authentication/domian/repository/base_repository.dart';
+import 'package:intern2grow/features/authentication/sign_up/domian/entities/user.dart';
+import 'package:intern2grow/features/authentication/sign_up/domian/repository/base_repository.dart';
 
 class LogoutUseCase extends BaseUseCase<User, NoParameter> {
   BaseQouteRepository baseQouteRepository;
