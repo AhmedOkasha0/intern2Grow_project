@@ -56,6 +56,7 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(
                       height: 44.h,
                       child: CustomTextformfield(
+                          validation: () {},
                           controller: userName,
                           isObscureText: false,
                           hintText: AppStrings.userHintText,
@@ -76,6 +77,7 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(
                       height: 44.h,
                       child: CustomTextformfield(
+                          validation: () {},
                           controller: passwordController,
                           isObscureText: true,
                           hintText: AppStrings.passwordHintText,

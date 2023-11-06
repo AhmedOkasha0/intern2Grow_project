@@ -4,12 +4,14 @@ import 'package:intern2grow/core/utils/app_colors.dart';
 
 class CustomTextformfield extends StatelessWidget {
   final bool isObscureText;
+  final Function validation;
   final TextInputType keyboardType;
   final TextEditingController? controller;
   final String hintText;
   final Function ontap;
   const CustomTextformfield({
     super.key,
+    required this.validation,
     required this.controller,
     required this.isObscureText,
     required this.hintText,
@@ -22,6 +24,7 @@ class CustomTextformfield extends StatelessWidget {
     return TextFormField(
       onTap: () => ontap,
       obscureText: isObscureText,
+      validator: (value) => validation(),
       keyboardType: keyboardType,
       controller: controller,
       decoration: InputDecoration(
