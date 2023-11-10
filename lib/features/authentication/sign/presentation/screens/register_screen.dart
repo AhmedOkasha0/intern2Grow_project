@@ -5,10 +5,10 @@ import 'package:intern2grow/config/theme/text_style.dart';
 import 'package:intern2grow/core/utils/app_colors.dart';
 import 'package:intern2grow/core/utils/app_constatns.dart';
 import 'package:intern2grow/core/utils/app_strings.dart';
-import 'package:intern2grow/features/authentication/sign_up/presentation/widgets/appbar.dart';
-import 'package:intern2grow/features/authentication/sign_up/presentation/widgets/custom_elevated_button.dart';
-import 'package:intern2grow/features/authentication/sign_up/presentation/widgets/custom_textformfield.dart';
-import 'package:intern2grow/features/authentication/sign_up/presentation/widgets/intern_logo_widget.dart';
+import 'package:intern2grow/features/authentication/sign/presentation/widgets/appbar.dart';
+import 'package:intern2grow/features/authentication/sign/presentation/widgets/custom_elevated_button.dart';
+import 'package:intern2grow/features/authentication/sign/presentation/widgets/custom_textformfield.dart';
+import 'package:intern2grow/features/authentication/sign/presentation/widgets/intern_logo_widget.dart';
 
 class RegisterScreen extends StatelessWidget {
   final TextEditingController userName = TextEditingController();
