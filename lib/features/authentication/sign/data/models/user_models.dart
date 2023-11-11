@@ -1,19 +1,32 @@
-import 'package:intern2grow/features/authentication/sign/domian/entities/user.dart';
+import 'package:equatable/equatable.dart';
 
-class UserModel extends User {
-  const UserModel({
-    required super.userName,
-    required super.password,
-    required super.emailAdress,
-  });
+class UserModel extends Equatable {
+  final int? id;
+  final String? userName;
+  final String? email;
+  final String? password;
+
+  const UserModel({this.id, this.userName, this.email, this.password});
+
+  @override
+  List<Object?> get props => [
+        email,
+        password,
+        id,
+        userName,
+      ];
+
   factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
-      userName: json["username"],
-      emailAdress: json["email"],
-      password: json["password"]);
+        userName: json["username"],
+        email: json["email"],
+        password: json["password"],
+        id: json["id"].t
+      );
 
   Map<String, dynamic> toJson() => {
         "username": userName,
-        "email": emailAdress,
+        "email": email,
         "password": password,
+        "id": id,
       };
 }

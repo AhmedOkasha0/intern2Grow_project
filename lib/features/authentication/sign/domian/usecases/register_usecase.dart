@@ -5,9 +5,9 @@ import 'package:intern2grow/features/authentication/sign/data/models/user_models
 import 'package:intern2grow/features/authentication/sign/domian/entities/user.dart';
 import 'package:intern2grow/features/authentication/sign/domian/repository/base_repository.dart';
 
-class RegisterUsecase extends BaseUseCase<UserModel, User> {
+class SignUpUseCase extends BaseUseCase<UserModel, User> {
   BaseAuthRepo baseQouteRepository;
-  RegisterUsecase({
+  SignUpUseCase({
     required this.baseQouteRepository,
   });
   @override
